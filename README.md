@@ -17,7 +17,16 @@ Ich największą konkurencją jest jedno ze znanych kin, którego stronę znajdz
 
 //TODO: Link do Figma
 
+Niestety współpraca z grafikiem projektującym interfejs nie układała się najlepiej i jego praca nie została skończona.
+Wasz zespoł zobowiązał się do pokrycia wymaganych funkcjonalnośći, chociaż nie na wszystko znajdziecie projekty.
+Jeśli czegoś brakuje możecie sami je dorobić i/lub od razu implementować.
+
 ### Wymagania
+
+#### Rezerwacja i zakup biletów
+
+#### Panel Administracyjny
+
 
 1. UI wg. dostarczonego projektu.
 2. Przygotowanie i wykonanie UI panelu administracyjnego.
