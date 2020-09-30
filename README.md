@@ -65,3 +65,9 @@ Jeśli czegoś brakuje możecie sami je dorobić i/lub od razu implementować.
 
 1. UI wg. dostarczonego projektu.
 2. Przygotowanie i wykonanie UI panelu administracyjnego.
+
+
+#### Możliwości rozwoju - wymagania dodatkowe
+
+- Integracja z systemem płatności - np. PayU (wykorzystać Sandbox, można bez podpinania konta - robić testowe płatności)
+- Sprawdzanie biletów - generowanie kodu QR z zakupionym biletem. Bilet jest "sprawdzony" po zeskanowaniu kodu QR telefonem.
