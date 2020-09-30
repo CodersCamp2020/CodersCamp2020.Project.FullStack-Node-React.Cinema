@@ -17,3 +17,7 @@ Ich największą konkurencją jest jedno ze znanych kin, którego stronę znajdz
 
 //TODO: Link do Figma
 
+### Wymagania
+
+1. UI wg. dostarczonego projektu.
+2. Przygotowanie i wykonanie UI panelu administracyjnego.
