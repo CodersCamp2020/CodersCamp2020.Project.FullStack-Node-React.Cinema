@@ -26,23 +26,15 @@ Wraz ze zbieraniem wymagań, dzieleniem pracy, zarządzaniem, całym procesem wy
 
 ##### W projekcie każdy z uczestników powinien zaprezentować praktyczną znajomość poniższych zagadnień związanych z Node.js i React:
 
-Aplikacja musi korzystać z bazy danych (noSQL lub SQL) i zostać wykonana w architekturze Klient-Serwer (składać się co najmniej z 3 jednostek wdrożeniowych). 
-
-Back-end zależy zaimplementować za pomocą frameworka Express.js lub NestJS (uczą się go backendowcy w ostatnim rozdziale).
-
-Front-end wykonajcie przy użyciu biblioteki React. 
-Jeśli czujecie się na siłach zastosujcie Redux do zarządzania stanem (frontendowcy pozanją go w ostatnim dziale).
-
 **Node.js / Express**
-- komunikacja klient - server
-- logowanie standardowe - jsonWebToken
-- endpointy
-- routy
-- rejestracja użytkownika
-- bazy danych (NoSQL, SQL)
-- MongoDB, mLab, RoboMongo
+- REST API
+- zakładanie konta użytkownika
+- autoryzacja i autentykacja użytkownika, różne uprawnienia. Wykorzystanie Json Web Token.
+- wykorzystanie bazy danych (NoSQL lub SQL)
+- integracja z jakimś zewnętrznym systemem (np. wysyłanie emaili)
 
 **React**
+- Komunikacja klient - serwer
 - Czym jest komponent
 - functional component
 - class component
@@ -51,6 +43,13 @@ Jeśli czujecie się na siłach zastosujcie Redux do zarządzania stanem (fronte
 - tworzenie list komponentów
 - zarzadzanie stanem - redux
 - JSX
+
+Aplikacja musi korzystać z bazy danych (noSQL lub SQL) i zostać wykonana w architekturze Klient-Serwer (składać się co najmniej z 3 jednostek wdrożeniowych). 
+
+Back-end zależy zaimplementować za pomocą frameworka Express.js lub NestJS (uczą się go backendowcy w ostatnim rozdziale).
+
+Front-end wykonajcie przy użyciu biblioteki React. 
+Jeśli czujecie się na siłach zastosujcie Redux do zarządzania stanem (frontendowcy pozanją go w ostatnim dziale).
 
 Ponieważ projekt jest bardzo duży, będziecie na niego mieli 2 razy więcej czasu, niż poprzednio.
 Sugerujemy w czasie działu 5 implementować część back-endową, a wczasie działu 6-tego część front-endową.
@@ -73,7 +72,7 @@ w zdefiniowaniu funkcjonalności, przygotowaniu ekranów i podzieleniu go na zad
 aby wykonać np. coś związanego z zainteresowaniami Waszej grupy :)
 **W tym przypadku zachęcamy jeszcze bardziej niż zazwyczaj, aby wykonać coś innego niż proponowane.
 Ten projekt będzie swoistym zwieńczeniem i podsumowaniem wszystkiego co nauczyliście się w trakcie trwania CodersCamp.
-Przykładowy projekt dajemy Wam głównie po to, abyście odczuli skalę, w której strone powinniście dążyć przy określaniu własnego pomysłu.**
+Przykładowy projekt dajemy Wam głównie po to, abyście odczuli skalę, w której stronę powinniście dążyć przy określaniu własnego pomysłu.**
 Możecie też zaimplementować Kino, ale zupełnie inaczej (lepiej) niż tutaj jest zaproponowane. 
 Niech wasza prezentacja zwali z nóg uczestników.
 Pamiętajcie tylko, że czas jest ograniczony i musicie zdążyć z aplikacją do prezentacji. Powodzenia!
@@ -95,48 +94,23 @@ Automatyzacja powinna zostać wykonana przy pomocy aplikacji webowej. Klient w n
 Może dobrze byłoby przygotować aplikację od razu na działanie na telefonach? Dacie radę zaproponować klientowi coś co spełni także to wymaganie?
 
 Z analizy wynika, że największą konkurencją jest znana sieć kin, której stronę znajdziecie [TUTAJ](https://multikino.pl/repertuar/wroclaw-pasaz-grunwaldzki/teraz-gramy/alfabetyczny). 
-Jak to często bywa, klient chce, aby jego strona była: „taka jak u konkurencji". 
-Liczy się także czas „time to market”, dlatego na samym początku, trzeba się skupić, tylko na koniecznych do przynoszenia profitu funkcjonalnościach.
+Jak to często bywa, klient chce, aby jego strona była: „taka jak u konkurencji” i oczywiście nowoczesna. 
+**Liczy się także czas „time to market”, dlatego na samym początku, trzeba się skupić, tylko na koniecznych do przynoszenia profitu funkcjonalnościach.**
+Te mniej ważne można zawsze dorobić po deadline.
+Aplikacja ma obsłużyć cały proces rezerwacji i sprzedaży biletów: od momentu **wyboru filmu**,
+poprzez **rezerwację miejsc**, aż do **płatności** (początkowo system płatności może być zamockowany) i **sprawdzenia biletów**.
+Po stronie panelu administracyjnego klient spodziewa się funkcjonalności, które pomogą mu konfigurować cały proces.
 
 Aby sprostać oczekiwaniom klienta, zapoznajcie się z dokładniejszym opisem działania sieci kin. 
 Poniżej są przedstawione najważniejsze terminy z dokładnymi wyjaśnieniami. 
-
-#### Filmy dla sieci MonoKino
-Cała sieć MonoKino posiada w swojej ofercie wiele filmów. 
-Te filmy powinny być zapisywane w bazie danych. 
-Należy móc je DODAWAĆ / AKTUALIZOWAĆ / PRZEGLĄDAĆ i USUWAĆ. 
-Usunięcie filmu powinno skutkować odwołaniem wszystkich zaplanowanych projekcji i wysłaniem do klientów wiadomości o zwrocie kosztów.
-
-### Kina sieci MonoKino
-Sieć ma zamiar posiadać Kina w różnych miastach na całym świecie. 
-Dlatego konieczne jest, aby prowadzić ewidencję Kin sieci. 
-Kino musi mieć swój numer identyfikacyjny oraz adres.
-
-### Sale kinowe
-Każde kino może mieć wiele sal kinowych. 
-Każda sala kinowa ma określone ile rzędów po ile miejsc posiada (zakładamy model uproszczony - prostokąt).
-
-### Seans filmowy
-Seans Filmowy, to projekcja danego filmu odbywająca się o danej godzinie, w danej sali kinowej. 
-Seans ma określoną: film, godzinę, salę.
-Seanse nie mogą się na siebie nakładać. 
-Należy też doliczyć czas 15 minut między seansami na sprzątanie. 
-Każde kino otwarte jest w godzinach 6-22. 
-Żaden film nie może się kończyć po zamknięciu, ani zaczynać nie wcześniej niż 15 minut po otwarciu.
-
-### Repertuar
-Repertuar jest planowany na każdy dzień. Zawiera seasne filmowe odbywające się w danym dniu w danym kinie. 
-
-
-### Miejsce na sali
-Miejsce na sali dotyczy danego seansu. 
 
 
 ### Wymagania
 Klient wraz z analitykiem biznesowym spisali podstawowe wymagania co do projektu.
 Jednakże nie krępujcie się przed ich doprecyzowaniem / zmianami, czy też ulepszeniami.
 To Wy jesteście profesjonalistami w swoim fachu i Klient ufa, że zrobicie wszystko jak najlepiej.
-Wymagania podzielono na dwie sekcje. Aplikację dla widza, i panel administracyjny.
+Jeśli uważacie, że jakichś informacji Wam brakuje, najlepiej, jeśli Product Owner spróbuje uzupełnić luki w wymaganiach wraz z klientem.
+Wymagania podzielono na dwie sekcje. Aplikację dla widza i panel administracyjny.
 
 #### Aplikacja dla widza (repertuar, rezerwacja i zakup biletów)
 
@@ -148,23 +122,43 @@ Niestety współpraca z grafikiem projektującym interfejs nie układała się n
 Wasz zespół zobowiązał się do pokrycia wymaganych funkcjonalności, chociaż nie na wszystko znajdziecie projekty interfejsu.
 Jeśli czegoś brakuje, możecie sami je dorobić na ekranach i/lub od razu implementować.
 
-##### Proponowane funkcjonalności:
-1. Wyświetlanie NADCHODZĄCE FILMY (to filmy, które już zostały zaplanowane w repertuarze, ale nie prowadzi się jeszcze sprzedaży biletów).
-2. Bilet można kupić maksymalnie na tydzień (7 * 24 godziny) przed planowanym seansem.
+##### Wymagania funkcjonalne:
+1. Klient może zarejestrować się w systemie, podając imię, nazwisko, hasło i adres e-mail.
+1. Klient może zalogować się w systemie, podając adres e-mail i hasło.
+1. Klient może przeglądać filmy „nadchodzące". Czyli takie, które są dostępne dla kina, ale nie zaplanowano jeszcze dla nich żadnych seansów.
+1. Klient wybiera film i seans, na jaki chce kupić bilet / zarezerwować miejsce.
+1. Klient może przeczytać szczegóły o filmie takie jak: Tytuł, rok produkcji, opis fabuły, plakat, kategorie (może być kilka), czas trwania.
+1. W przypadku rezerwacji miejsca płatność odbywa się w kasie. Jeśli klient kupuje bilet, płatności należy dokonać on-line.
+1. Rezerwacji może dokonać jedynie zarejestrowany klient. 
+1. Zakupu można dokonać bez rejestracji — podając jedynie adres email.
+1. Jeśli rezerwacja nie zostanie odebrana na 15 minut przed rozpoczęciem seans, miejsce zostaje zwolnione, a rezerwacja anulowana.
+1. Jeden klient nie może zarezerwować więcej niż 20 miejsc na jeden seans. 
+1. Klient powinien zostać poinformowany o statusie swojej płatności w systemie.
+1. Klient powinien otrzymać bilet na podany przy zakupie / rejestracji adres email.
+
 
 #### Panel Administracyjny (zarządzanie filmami, planowanie repertuaru, sale kinowe)
 
 ##### Prototyp interfejsu użytkownika
 Przygotowanie projektu od 0 lub implementacja bez projektu.
 
-##### Proponowane funkcjonalności:
-- [ ] CRUD dla filmów. Film musi zawierać: Tytuł, rok produkcji, opis fabuły, plakat, kategorie (może być kilka), czas trwania.
-- [ ] CRUD dla kin.
-- [ ] CRUD dla sal kinowych.
-- [ ] Każda sala kinowa ma określone ile rzędów po ile miejsc posiada (zakładamy model uproszczony - prostokąt).
-- [ ] Planowanie repertuaru na dany dzień (z wcześniej dodanym filmów). Repertuar zawiera wiele seansów. Seans ma określoną: film, godzinę, salę.
-- [ ] 
-- [ ] Tryb COVID dla sal - możliwe rezerwowanie miejsc jedynie jak na szachownicy.
+##### Wymagania funkcjonalne:
+1. Administrator wprowadza informację o placówkach w sieci kin. Sieć ma zamiar posiadać Kina w różnych miastach na całym świecie. 
+Dlatego konieczne jest, aby prowadzić ewidencję Kin sieci. Kino musi mieć swój unikalny numer identyfikacyjny. Każda placówka ma określony adres i godziny otwarcia.
+1. Administrator wprowadza informacje o filmie, który będzie dostępy dla wszystkich placówek w sieci.
+1. Usunięcie filmu powinno skutkować odwołaniem wszystkich zaplanowanych projekcji, anulowaniem rezerwacji i wysłaniem do klientów, którzy zakupili bilety, wiadomości o zwrocie kosztów.
+1. Administrator wprowadza informacje o seansach w danych kinie i przypisuje do seansu salę kinową i film oraz określa godzinę.
+1. W danej sali kinowej nie mogą odbywać się 2 seanse jednocześnie. Dodatkowo między seansami należy zachować co najmniej 15 minutową przerwę na sprzątanie.
+1. Seans musi się kończyć co najmniej 15 minut przed zamknięciem kina i zaczynać minimum 15 minut po otwarciu kina.
+1. Każda sala kinowa ma określone, ile posiada kolumn i rzędów (zakładamy uproszczony model prostokąta).
+1. Administrator zarządza listą cen za bilety. Wybiera jakie bilety są dostępne na które seanse. (np. na seans premierowy nie obowiązują zniżki, ale na resztę można zakupić bilet studencki).
+1. Administrator otrzymuje raport w czasie rzeczywistym o liczbie sprzedanych i zarezerwowanych miejsc. Dzięki temu będzie mógł podejmować
+decyzje, które zwiększa przychód.
+1. Administrator może konfigurować czy na dany seans można zostawiać (w czasie zakupu lub rezerwacji) puste miejsca na rogu rzędów.
+Tę zasadę może zmienić w każdym momencie.
+1. Administrator może włączyć specjalny tryb pandemii, w którym muszą być przynajmniej 2 miejsca odstępu w jednym rzędzie, między miejscami
+z 2 różnych rezerwacji / zakupów.
+
 
 
 ## Możliwe usprawnienia i dodatkowe funkcjonalności:
