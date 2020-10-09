@@ -28,7 +28,7 @@ Wraz ze zbieraniem wymagań, dzieleniem pracy, zarządzaniem, całym procesem wy
 ### Zasady wykonywania projektu (wspólne dla wszystkich grup i mentorów): 
 
 ##### W projekcie każdy z uczestników powinien zaprezentować praktyczną znajomość poniższych zagadnień związanych z Node.js i React:
-
+//TODO: Zaktualizowac
 **Node.js / Express**
 - REST API
 - zakładanie konta użytkownika
