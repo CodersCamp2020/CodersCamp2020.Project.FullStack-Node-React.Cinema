@@ -96,23 +96,32 @@ Może dobrze byłoby przygotować aplikację od razu na działanie na telefonach
 
 Z analizy wynika, że największą konkurencją jest znana sięc kin, której stronę znajdziecie [TUTAJ](https://multikino.pl/repertuar/wroclaw-pasaz-grunwaldzki/teraz-gramy/alfabetyczny). 
 Jak to często bywa, klient chce, aby jego strona była: „taka jak u konkurencji". 
-Liczy się także czas „time to market” dlatego na samym początku trzeba się skupić tylko na koniecznych do działania funkcjonalnościach.
+Liczy się także czas „time to market”, dlatego na samym początku, trzeba się skupić, tylko na koniecznych do przynoszenia profitu funkcjonalnościach.
 
-Aby sprostać oczekiwaniom klienta zapoznajcie się z dokładniejszym opisem działania kina.  
+Aby sprostać oczekiwaniom klienta, zapoznajcie się z dokładniejszym opisem działania sieci kin.  
 
 #### Filmy dla sieci MonoKino
-Cała sieć MonoKino posiada w swojej ofercie wiele filmów. Te filmy powinny być zapisywane w bazie danych. Należy móc je DODAWAĆ / AKTUALIZOWAĆ / PRZEGLĄDAĆ i USUWAĆ. Usunięcie filmu powinno skutkować odwołaniem wszystkich zaplanowanych projekcji i wysłaniem do klientów wiadomości o zwrocie kosztów.
+Cała sieć MonoKino posiada w swojej ofercie wiele filmów. 
+Te filmy powinny być zapisywane w bazie danych. 
+Należy móc je DODAWAĆ / AKTUALIZOWAĆ / PRZEGLĄDAĆ i USUWAĆ. 
+Usunięcie filmu powinno skutkować odwołaniem wszystkich zaplanowanych projekcji i wysłaniem do klientów wiadomości o zwrocie kosztów.
 
 ### Kina sieci MonoKino
-Sieć ma zamiar posiadać Kina w różnych miastach na całym świecie. Dlatego konieczne jest, aby prowadzić ewidencję Kin sieci. Kino musi mieć swój numer identyfikacyjny oraz adres.
+Sieć ma zamiar posiadać Kina w różnych miastach na całym świecie. 
+Dlatego konieczne jest, aby prowadzić ewidencję Kin sieci. 
+Kino musi mieć swój numer identyfikacyjny oraz adres.
 
 ### Sale kinowe
-Każde kino może mieć wiele sal kinowych. Każda sala kinowa ma określone ile rzędów po ile miejsc posiada (zakładamy model uproszczony - prostokąt).
+Każde kino może mieć wiele sal kinowych. 
+Każda sala kinowa ma określone ile rzędów po ile miejsc posiada (zakładamy model uproszczony - prostokąt).
 
 ### Seans filmowy
-Seans Filmowy, to projekcja danego filmu odbywająca się o danej godzinie, w danej sali kinowej. Seans ma określoną: film, godzinę, salę.
-Seanse nie mogą się na siebie nakładać. Należy też doliczyć czas 15 minut między seansami na sprzątanie. 
-Każde kino otwarte jest w godzinach 6-22. Żaden film nie może się kończyć po zamknięciu, ani zaczynać nie wcześniej niż 15 minut po otwarciu.
+Seans Filmowy, to projekcja danego filmu odbywająca się o danej godzinie, w danej sali kinowej. 
+Seans ma określoną: film, godzinę, salę.
+Seanse nie mogą się na siebie nakładać. 
+Należy też doliczyć czas 15 minut między seansami na sprzątanie. 
+Każde kino otwarte jest w godzinach 6-22. 
+Żaden film nie może się kończyć po zamknięciu, ani zaczynać nie wcześniej niż 15 minut po otwarciu.
 
 ### Repertuar
 Repertuar jest planowany na każdy dzień. Zawiera seasne filmowe odbywające się w danym dniu w danym kinie. 
