@@ -3,6 +3,9 @@ Drogi mentorze, cały projekt, jak i wytyczne traktuj jako „wskazówki".
 Pamiętaj, że nadrzędnym celem na CodersCamp jest przekazać wiedzę i nauczyć :) 
 Wszystko, co wg. Twojej najlepszej wiedzy, będzie służyć do osiągnięcia tego celu, możesz zastosować. 
 Jednakże pamiętaj o trzymaniu się ogólnych wytycznych oceny i programu kursu (minimum musi zostać spełnione, abyśmy na koniec kursu mogli potwierdzić uczestnikom opanowanie umiejętności stosownym dokumentem).
+Zachęcamy, żeby projekt końcowy zespoły zaproponowały zupełnie od 0.
+Jednakże to Ty najlepiej znasz swój zespół i jesteś w stanie ocenić jego doświadczenie i samodzielność.
+Czy dadzą radę (być może z Twoją drobną pomocą) zaprojektować i wykonać własną aplikację, czy lepiej skorzystać z gotowego pomysłu.
 
 Aby przygotować TEN projekt do wykonania przez zespół.
 1. Sklonuj repozytorium.
