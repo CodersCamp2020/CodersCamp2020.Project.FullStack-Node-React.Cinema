@@ -168,6 +168,7 @@ z 2 różnych rezerwacji / zakupów.
 
 ## Dodatkowe zadania (wykraczające poza zakres kursu):
 1. Wykonanie testów E2E, przy użyciu odpowiedniego narzędzia. Proponujemy np. Cypress.
+1. Utworzenie Storybook dla zdefiniowanych komponentów.
 
 Wszelkie inne dodane przez Was funkcjonalności czy usprawnienia infrastrukturalne należy przedstawić w README.md projektu :)
 Template znajdziecie w pierwszym projekcie.
