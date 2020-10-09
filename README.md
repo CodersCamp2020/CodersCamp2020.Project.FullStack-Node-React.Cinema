@@ -176,4 +176,4 @@ Przygotowanie projektu od 0 lub implementacja bez projektu.
 1. Wykonanie testów E2E, przy użyciu odpowiedniego narzędzia. Proponujemy np. Cypress.
 
 Wszelkie inne dodane przez Was funkcjonalności czy usprawnienia infrastrukturalne należy przedstawić w README.md projektu :)
-Template znajdziecie w poprzednim projekcie.
+Template znajdziecie w pierwszym projekcie.
