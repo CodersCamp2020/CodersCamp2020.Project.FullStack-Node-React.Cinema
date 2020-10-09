@@ -98,8 +98,8 @@ Z analizy wynika, że największą konkurencją jest znana sieć kin, której st
 Jak to często bywa, klient chce, aby jego strona była: „taka jak u konkurencji". 
 Liczy się także czas „time to market”, dlatego na samym początku, trzeba się skupić, tylko na koniecznych do przynoszenia profitu funkcjonalnościach.
 
-Aby sprostać oczekiwaniom klienta, zapoznajcie się z dokładniejszym opisem działania sieci kin.  
-
+Aby sprostać oczekiwaniom klienta, zapoznajcie się z dokładniejszym opisem działania sieci kin. 
+Poniżej są przedstawione najważniejsze terminy z dokładnymi wyjaśnieniami. 
 
 #### Filmy dla sieci MonoKino
 Cała sieć MonoKino posiada w swojej ofercie wiele filmów. 
@@ -132,15 +132,6 @@ Repertuar jest planowany na każdy dzień. Zawiera seasne filmowe odbywające si
 Miejsce na sali dotyczy danego seansu. 
 
 
-
-### Prototyp interfejsu użytkownika
-
-//TODO: Link do Figma
-
-Niestety współpraca z grafikiem projektującym interfejs nie układała się najlepiej i jego praca nie została skończona.
-Wasz zespół zobowiązał się do pokrycia wymaganych funkcjonalności, chociaż nie na wszystko znajdziecie projekty interfejsu.
-Jeśli czegoś brakuje, możecie sami je dorobić na ekranach i/lub od razu implementować.
-
 ### Wymagania
 Klient wraz z analitykiem biznesowym spisali podstawowe wymagania co do projektu.
 Jednakże nie krępujcie się przed ich doprecyzowaniem / zmianami, czy też ulepszeniami.
@@ -149,11 +140,24 @@ Wymagania podzielono na dwie sekcje. Aplikację dla widza, i panel administracyj
 
 #### Aplikacja dla widza (repertuar, rezerwacja i zakup biletów)
 
+##### Prototyp interfejsu użytkownika
+
+//TODO: Link do Figma
+
+Niestety współpraca z grafikiem projektującym interfejs nie układała się najlepiej i jego praca nie została skończona.
+Wasz zespół zobowiązał się do pokrycia wymaganych funkcjonalności, chociaż nie na wszystko znajdziecie projekty interfejsu.
+Jeśli czegoś brakuje, możecie sami je dorobić na ekranach i/lub od razu implementować.
+
+##### Proponowane funkcjonalności:
 1. Wyświetlanie NADCHODZĄCE FILMY (to filmy, które już zostały zaplanowane w repertuarze, ale nie prowadzi się jeszcze sprzedaży biletów).
 2. Bilet można kupić maksymalnie na tydzień (7 * 24 godziny) przed planowanym seansem.
 
 #### Panel Administracyjny (zarządzanie filmami, planowanie repertuaru, sale kinowe)
 
+##### Prototyp interfejsu użytkownika
+Przygotowanie projektu od 0 lub implementacja bez projektu.
+
+##### Proponowane funkcjonalności:
 - [ ] CRUD dla filmów. Film musi zawierać: Tytuł, rok produkcji, opis fabuły, plakat, kategorie (może być kilka), czas trwania.
 - [ ] CRUD dla kin.
 - [ ] CRUD dla sal kinowych.
@@ -162,11 +166,14 @@ Wymagania podzielono na dwie sekcje. Aplikację dla widza, i panel administracyj
 - [ ] 
 - [ ] Tryb COVID dla sal - możliwe rezerwowanie miejsc jedynie jak na szachownicy.
 
-1. UI wg. dostarczonego projektu.
-2. Przygotowanie i wykonanie UI panelu administracyjnego.
+
+## Możliwe usprawnienia i dodatkowe funkcjonalności:
+1. Integracja z zewnętrznym systemem płatności — np. PayU (wykorzystać Sandbox, który umożliwia testowanie płatności bez prawdziwych transakcji)
+1. Sprawdzanie biletów — generowanie kodu QR z zakupionym biletem. Bilet jest „sprawdzony” po zeskanowaniu kodu QR telefonem.
 
 
-#### Możliwości rozwoju - wymagania dodatkowe
+## Dodatkowe zadania (wykraczające poza zakres kursu):
+1. Wykonanie testów E2E, przy użyciu odpowiedniego narzędzia. Proponujemy np. Cypress.
 
-- Integracja z systemem płatności - np. PayU (wykorzystać Sandbox, można bez podpinania konta - robić testowe płatności)
-- Sprawdzanie biletów - generowanie kodu QR z zakupionym biletem. Bilet jest "sprawdzony" po zeskanowaniu kodu QR telefonem.
+Wszelkie inne dodane przez Was funkcjonalności czy usprawnienia infrastrukturalne należy przedstawić w README.md projektu :)
+Template znajdziecie w poprzednim projekcie.
