@@ -94,11 +94,12 @@ Ciągle zwiększanie się liczby placówek i klientów wymaga zautomatyzowania t
 Automatyzacja powinna zostać wykonana przy pomocy aplikacji webowej. Klient w niedalekiej przyszłości zapewne będzie chciał także wersję mobilną.
 Może dobrze byłoby przygotować aplikację od razu na działanie na telefonach? Dacie radę zaproponować klientowi coś co spełni także to wymaganie?
 
-Z analizy wynika, że największą konkurencją jest znana sięc kin, której stronę znajdziecie [TUTAJ](https://multikino.pl/repertuar/wroclaw-pasaz-grunwaldzki/teraz-gramy/alfabetyczny). 
+Z analizy wynika, że największą konkurencją jest znana sieć kin, której stronę znajdziecie [TUTAJ](https://multikino.pl/repertuar/wroclaw-pasaz-grunwaldzki/teraz-gramy/alfabetyczny). 
 Jak to często bywa, klient chce, aby jego strona była: „taka jak u konkurencji". 
 Liczy się także czas „time to market”, dlatego na samym początku, trzeba się skupić, tylko na koniecznych do przynoszenia profitu funkcjonalnościach.
 
 Aby sprostać oczekiwaniom klienta, zapoznajcie się z dokładniejszym opisem działania sieci kin.  
+
 
 #### Filmy dla sieci MonoKino
 Cała sieć MonoKino posiada w swojej ofercie wiele filmów. 
@@ -137,17 +138,21 @@ Miejsce na sali dotyczy danego seansu.
 //TODO: Link do Figma
 
 Niestety współpraca z grafikiem projektującym interfejs nie układała się najlepiej i jego praca nie została skończona.
-Wasz zespoł zobowiązał się do pokrycia wymaganych funkcjonalnośći, chociaż nie na wszystko znajdziecie projekty.
-Jeśli czegoś brakuje możecie sami je dorobić i/lub od razu implementować.
+Wasz zespół zobowiązał się do pokrycia wymaganych funkcjonalności, chociaż nie na wszystko znajdziecie projekty interfejsu.
+Jeśli czegoś brakuje, możecie sami je dorobić na ekranach i/lub od razu implementować.
 
 ### Wymagania
+Klient wraz z analitykiem biznesowym spisali podstawowe wymagania co do projektu.
+Jednakże nie krępujcie się przed ich doprecyzowaniem / zmianami, czy też ulepszeniami.
+To Wy jesteście profesjonalistami w swoim fachu i Klient ufa, że zrobicie wszystko jak najlepiej.
+Wymagania podzielono na dwie sekcje. Aplikację dla widza, i panel administracyjny.
 
-#### Rezerwacja i zakup biletów
+#### Aplikacja dla widza (repertuar, rezerwacja i zakup biletów)
 
 1. Wyświetlanie NADCHODZĄCE FILMY (to filmy, które już zostały zaplanowane w repertuarze, ale nie prowadzi się jeszcze sprzedaży biletów).
 2. Bilet można kupić maksymalnie na tydzień (7 * 24 godziny) przed planowanym seansem.
 
-#### Panel Administracyjny
+#### Panel Administracyjny (zarządzanie filmami, planowanie repertuaru, sale kinowe)
 
 - [ ] CRUD dla filmów. Film musi zawierać: Tytuł, rok produkcji, opis fabuły, plakat, kategorie (może być kilka), czas trwania.
 - [ ] CRUD dla kin.
