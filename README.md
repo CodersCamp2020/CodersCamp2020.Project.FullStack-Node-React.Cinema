@@ -6,12 +6,16 @@ Jednakże pamiętaj o trzymaniu się ogólnych wytycznych oceny i programu kursu
 Zachęcamy, żeby projekt końcowy zespoły zaproponowały zupełnie od 0.
 Jednakże to Ty najlepiej znasz swój zespół i jesteś w stanie ocenić jego doświadczenie i samodzielność.
 Czy dadzą radę (być może z Twoją drobną pomocą) zaprojektować i wykonać własną aplikację, czy lepiej skorzystać z gotowego pomysłu.
+Możecie też zaprojektować i wykonać klon jakieś innej popularnej aplikacji jak Twitter czy Facebook.
+Jeśli szukasz inspiracji warto skonsultować to z zespołem i innymi mentorami.
 
 Aby przygotować TEN projekt do wykonania przez zespół.
 1. Sklonuj repozytorium.
 1. Usuń instrukcję dla mentora z README.md
 1. Opracujcie pomysł na projekt i wymagania. Lub użyjcie opisu poniżej jako inspirację. 
-Aby odkryć, co chcecie wykonać, zastosujcie znane Wam metody. Jeśli czujecie się dobrze w EventStormingu to może być dobra droga.
+Aby odkryć, co chcecie wykonać, zastosujcie znane Wam metody. 
+Jeśli czujecie się dobrze w EventStormingu to może być dobra droga. A może pierwsza okazja do zastosowania tej metody w praktyce :) ? 
+//TODO: Dodac materialy!
 1. Spotkaj się z zespołem, aby przeprowadzić planning i potworzyć Issues przynajmniej na pierwszy tydzień.
 Wyznaczony Development Manager niech organizuje pracę dalej, ale dobrze jakbyś był na spotkaniach planujących zadania.
 
@@ -34,17 +38,16 @@ Wraz ze zbieraniem wymagań, dzieleniem pracy, zarządzaniem, całym procesem wy
 - zakładanie konta użytkownika
 - autoryzacja i autentykacja użytkownika, różne uprawnienia. Wykorzystanie Json Web Token.
 - wykorzystanie bazy danych (NoSQL lub SQL)
-- integracja z jakimś zewnętrznym systemem (np. wysyłanie emaili)
+- integracja z jakimś zewnętrznym systemem (np. wysyłanie e-maili)
 
 **React**
-- Komunikacja klient - serwer
+- Komunikacja klient — serwer
 - Czym jest komponent
 - functional component
-- class component
+- React hooks
 - state
 - props
 - tworzenie list komponentów
-- zarzadzanie stanem - redux
 - JSX
 
 Aplikacja musi korzystać z bazy danych (noSQL lub SQL) i zostać wykonana w architekturze Klient-Serwer (składać się co najmniej z 3 jednostek wdrożeniowych). 
@@ -52,7 +55,7 @@ Aplikacja musi korzystać z bazy danych (noSQL lub SQL) i zostać wykonana w arc
 Back-end zależy zaimplementować za pomocą frameworka Express.js lub NestJS (uczą się go backendowcy w ostatnim rozdziale).
 
 Front-end wykonajcie przy użyciu biblioteki React. 
-Jeśli czujecie się na siłach zastosujcie Redux do zarządzania stanem (frontendowcy pozanją go w ostatnim dziale).
+Jeśli czujecie się na siłach, zastosujcie Redux do zarządzania stanem (frontendowcy pozanją go w ostatnim dziale).
 
 Ponieważ projekt jest bardzo duży, będziecie na niego mieli 2 razy więcej czasu, niż poprzednio.
 Sugerujemy w czasie działu 5 implementować część back-endową, a wczasie działu 6-tego część front-endową.
@@ -74,7 +77,7 @@ Jednakże jeśli macie pomysł na projekt podobnej skali, który spełni opisane
 w zdefiniowaniu funkcjonalności, przygotowaniu ekranów i podzieleniu go na zadania — to nic nie stoi na przeszkodzie,
 aby wykonać np. coś związanego z zainteresowaniami Waszej grupy :)
 **W tym przypadku zachęcamy jeszcze bardziej niż zazwyczaj, aby wykonać coś innego niż proponowane.
-Ten projekt będzie swoistym zwieńczeniem i podsumowaniem wszystkiego co nauczyliście się w trakcie trwania CodersCamp.
+Ten projekt będzie swoistym zwieńczeniem i podsumowaniem wszystkiego, co nauczyliście się w trakcie trwania CodersCamp.
 Przykładowy projekt dajemy Wam głównie po to, abyście odczuli skalę, w której stronę powinniście dążyć przy określaniu własnego pomysłu.**
 Możecie też zaimplementować Kino, ale zupełnie inaczej (lepiej) niż tutaj jest zaproponowane. 
 Niech wasza prezentacja zwali z nóg uczestników.
