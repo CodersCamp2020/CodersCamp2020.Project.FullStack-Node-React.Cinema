@@ -7,7 +7,7 @@ Zachęcamy, żeby projekt końcowy zespoły zaproponowały zupełnie od 0.
 Jednakże to Ty najlepiej znasz swój zespół i jesteś w stanie ocenić jego doświadczenie i samodzielność.
 Czy dadzą radę (być może z Twoją drobną pomocą) zaprojektować i wykonać własną aplikację, czy lepiej skorzystać z gotowego pomysłu.
 Możecie też zaprojektować i wykonać klon jakieś innej popularnej aplikacji jak Twitter czy Facebook.
-Jeśli szukasz inspiracji warto skonsultować to z zespołem i innymi mentorami.
+Jeśli szukasz inspiracji, warto skonsultować to z zespołem i innymi mentorami.
 
 Aby przygotować TEN projekt do wykonania przez zespół.
 1. Sklonuj repozytorium.
