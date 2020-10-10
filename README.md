@@ -20,7 +20,7 @@ Jeśli czujecie się dobrze w EventStormingu to może być dobra droga. A może 
 Wyznaczony Development Manager niech organizuje pracę dalej, ale dobrze jakbyś był na spotkaniach planujących zadania.
 
 # CodersCamp 2020 - Projekt końcowy (FullStack — Node.js + React)
-Coders Camp (coderscamp.edu.pl) - Projekt MonoKino FullStack. 
+**CodersCamp (coderscamp.edu.pl) - Największy otwarty kurs programowania webowego** 
 
 ### Wprowadzenie
 Gratulacje! 
