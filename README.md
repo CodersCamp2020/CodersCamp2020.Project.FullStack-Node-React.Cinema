@@ -1,24 +1,3 @@
-### Instrukcja dla mentora
-Drogi mentorze, cały projekt, jak i wytyczne traktuj jako „wskazówki". 
-Pamiętaj, że nadrzędnym celem na CodersCamp jest przekazać wiedzę i nauczyć :) 
-Wszystko, co wg. Twojej najlepszej wiedzy, będzie służyć do osiągnięcia tego celu, możesz zastosować. 
-Jednakże pamiętaj o trzymaniu się ogólnych wytycznych oceny i programu kursu (minimum musi zostać spełnione, abyśmy na koniec kursu mogli potwierdzić uczestnikom opanowanie umiejętności stosownym dokumentem).
-Zachęcamy, żeby projekt końcowy zespoły zaproponowały zupełnie od 0.
-Jednakże to Ty najlepiej znasz swój zespół i jesteś w stanie ocenić jego doświadczenie i samodzielność.
-Czy dadzą radę (być może z Twoją drobną pomocą) zaprojektować i wykonać własną aplikację, czy lepiej skorzystać z gotowego pomysłu.
-Możecie też zaprojektować i wykonać klon jakieś innej popularnej aplikacji jak Twitter czy Facebook.
-Jeśli szukasz inspiracji, warto skonsultować to z zespołem i innymi mentorami.
-
-Aby przygotować TEN projekt do wykonania przez zespół.
-1. Sklonuj repozytorium.
-1. Usuń instrukcję dla mentora z README.md
-1. Opracujcie pomysł na projekt i wymagania. Lub użyjcie opisu poniżej jako inspirację. 
-Aby odkryć, co chcecie wykonać, zastosujcie znane Wam metody. 
-Jeśli czujecie się dobrze w EventStormingu to może być dobra droga. A może pierwsza okazja do zastosowania tej metody w praktyce :) ? 
-//TODO: Dodac materialy!
-1. Spotkaj się z zespołem, aby przeprowadzić planning i potworzyć Issues przynajmniej na pierwszy tydzień.
-Wyznaczony Development Manager niech organizuje pracę dalej, ale dobrze jakbyś był na spotkaniach planujących zadania.
-
 # CodersCamp 2020 - Projekt końcowy (FullStack — Node.js + React)
 **CodersCamp (coderscamp.edu.pl) - Największy otwarty kurs programowania webowego** 
 
