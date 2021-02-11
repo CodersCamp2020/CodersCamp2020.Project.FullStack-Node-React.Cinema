@@ -11,23 +11,22 @@ Wraz ze zbieraniem wymagań, dzieleniem pracy, zarządzaniem, całym procesem wy
 ### Zasady wykonywania projektu (wspólne dla wszystkich grup i mentorów): 
 
 ##### W projekcie każdy z uczestników powinien zaprezentować praktyczną znajomość poniższych zagadnień związanych z Node.js i React:
-//TODO: Zaktualizowac
+
 **Node.js / Express**
 - REST API
 - zakładanie konta użytkownika
 - autoryzacja i autentykacja użytkownika, różne uprawnienia. Wykorzystanie Json Web Token.
 - wykorzystanie bazy danych (NoSQL lub SQL)
 - integracja z jakimś zewnętrznym systemem (np. wysyłanie e-maili)
+- pisanie testów
 
 **React**
 - Komunikacja klient — serwer
-- Czym jest komponent
 - functional component
 - React hooks
-- state
-- props
 - tworzenie list komponentów
 - JSX
+- pisanie testów
 
 Aplikacja musi korzystać z bazy danych (noSQL lub SQL) i zostać wykonana w architekturze Klient-Serwer (składać się co najmniej z 3 jednostek wdrożeniowych, tzn.: aplikacja webowa, backend i baza danych). 
 
