@@ -29,18 +29,20 @@ Wraz ze zbieraniem wymagań, dzieleniem pracy, zarządzaniem, całym procesem wy
 - tworzenie list komponentów
 - JSX
 
-Aplikacja musi korzystać z bazy danych (noSQL lub SQL) i zostać wykonana w architekturze Klient-Serwer (składać się co najmniej z 3 jednostek wdrożeniowych). 
+Aplikacja musi korzystać z bazy danych (noSQL lub SQL) i zostać wykonana w architekturze Klient-Serwer (składać się co najmniej z 3 jednostek wdrożeniowych, tzn.: aplikacja webowa, backend i baza danych). 
 
 Back-end zależy zaimplementować za pomocą frameworka Express.js lub NestJS (uczą się go backendowcy w ostatnim rozdziale).
 
 Front-end wykonajcie przy użyciu biblioteki React. 
-Jeśli czujecie się na siłach, zastosujcie Redux do zarządzania stanem (frontendowcy pozanją go w ostatnim dziale).
+Jeśli czujecie się na siłach, zastosujcie Redux do zarządzania stanem (frontendowcy poznają go w ostatnim dziale).
 
 Ponieważ projekt jest bardzo duży, będziecie na niego mieli 2 razy więcej czasu, niż poprzednio.
 Sugerujemy w czasie działu 5 implementować część back-endową, a wczasie działu 6-tego część front-endową.
 Wiedzę uzyskaną w dziale 6-tym możecie wykorzystać w projekcie, ale nie jest to koniecznie.
 Ale to Wy odpowiadacie za powodzenie projektu, więc podejmujcie decyzje, korzystajcie z porad bardziej doświadczonych
-i zróbcie coś niesamowitego!
+i zróbcie coś niesamowitego! W trakcie trwania projektu odbędą się dwie prezentacje (z częstotliwością jak dotychczas).
+Najprawdodpoboniej na pierwszym spotkaniu zaprezentujecie samo REST API. Warto przygotować je tak, jakby miało być odrębnym produktem!
+A na prezentacji kończącej projekt z Reacta, pokażecie jak działa wszystko razem.
 
 ##### W trakcie trwania projektu należy wyznaczyć w zespole następujące role
 tak jak opisano w przypadku poprzedniego projektu.
@@ -55,13 +57,14 @@ Proponowany projekt pozwala na zastosowania większości umiejętności, jakie p
 Jednakże jeśli macie pomysł na projekt podobnej skali, który spełni opisane na górze wymagania i czujecie się na siłach
 w zdefiniowaniu funkcjonalności, przygotowaniu ekranów i podzieleniu go na zadania — to nic nie stoi na przeszkodzie,
 aby wykonać np. coś związanego z zainteresowaniami Waszej grupy :)
-**W tym przypadku zachęcamy jeszcze bardziej niż zazwyczaj, aby wykonać coś innego niż proponowane.
+**W tym przypadku zachęcamy jeszcze bardziej niż zazwyczaj, aby wykonać coś innego niż proponowany temat.
 Ten projekt będzie swoistym zwieńczeniem i podsumowaniem wszystkiego, co nauczyliście się w trakcie trwania CodersCamp.
 Przykładowy projekt dajemy Wam głównie po to, abyście odczuli skalę, w której stronę powinniście dążyć przy określaniu własnego pomysłu.**
 Możecie też zaimplementować Kino, ale zupełnie inaczej (lepiej) niż tutaj jest zaproponowane. 
 Niech wasza prezentacja zwali z nóg uczestników.
-Pamiętajcie tylko, że czas jest ograniczony i musicie zdążyć z aplikacją do prezentacji. Powodzenia!
-
+Pamiętajcie tylko, że czas jest ograniczony i musicie zdążyć z aplikacją do prezentacji. 
+Ten projekt jest niezwykle ważny dla waszej przyszłej programistycznej kariery. Można powiedzieć, że od tego zależy wasze być albo nie być podczas poszukiwania pierwszej pracy. W protoflio Junior Developera znakomicie sprwdzają się tego rodzaju projekty - a okazja do wykonania go w zespole i to pod okiem mentora - już może Wam się więcej nie powtórzyć.
+Więc dajcie z siebie wszystko i powodzenia!
  
 Czas porzucić narrację CodersCamp i wcielić się w członka zespołu projektowego, jeśli decydujecie się wykonać aplikację dla kina...
 
@@ -83,7 +86,7 @@ Jak to często bywa, klient chce, aby jego strona była: „taka jak u konkurenc
 **Liczy się także czas „time to market”, dlatego na samym początku, trzeba się skupić, tylko na koniecznych do przynoszenia profitu funkcjonalnościach.**
 Te mniej ważne można zawsze dorobić po deadline.
 Aplikacja ma obsłużyć cały proces rezerwacji i sprzedaży biletów: od momentu **wyboru filmu**,
-poprzez **rezerwację miejsc**, aż do **płatności** (początkowo system płatności może być zamockowany) i **sprawdzenia biletów**.
+poprzez **rezerwację miejsc**, aż do **płatności** (początkowo system płatności może być zamockowany). Warto pomyśleć też o automatyzacja **sprawdzania biletów** przy wejściu do kina.
 Po stronie panelu administracyjnego klient spodziewa się funkcjonalności, które pomogą mu konfigurować cały proces.
 
 Aby sprostać oczekiwaniom klienta, zapoznajcie się z dokładniejszym opisem działania sieci kin. 
@@ -101,11 +104,10 @@ Wymagania podzielono na dwie sekcje. Aplikację dla widza i panel administracyjn
 
 ##### Prototyp interfejsu użytkownika
 
-//TODO: Link do Figma
-
 Niestety współpraca z grafikiem projektującym interfejs nie układała się najlepiej i jego praca nie została skończona.
 Wasz zespół zobowiązał się do pokrycia wymaganych funkcjonalności, chociaż nie na wszystko znajdziecie projekty interfejsu.
-Jeśli czegoś brakuje, możecie sami je dorobić na ekranach i/lub od razu implementować.
+Możecie sami wykonać projekty ekranów i/lub od razu implementować. Warto wzorować się na rozwiązaniach konkurencyjnych.
+Projekt grafika znajdziecie tutaj: https://www.figma.com/file/cuKLOWensUxkq5dYB082yd/CodersCamp2020.Project.FullStack-Node-React.Cinema?node-id=4412%3A3065
 
 ##### Wymagania funkcjonalne:
 1. Klient może zarejestrować się w systemie, podając imię, nazwisko, hasło i adres e-mail.
@@ -145,7 +147,6 @@ Tę zasadę może zmienić w każdym momencie.
 z 2 różnych rezerwacji / zakupów.
 
 
-
 ## Możliwe usprawnienia i dodatkowe funkcjonalności:
 1. Integracja z zewnętrznym systemem płatności — np. PayU (wykorzystać Sandbox, który umożliwia testowanie płatności bez prawdziwych transakcji)
 1. Sprawdzanie biletów — generowanie kodu QR z zakupionym biletem. Bilet jest „sprawdzony” po zeskanowaniu kodu QR telefonem.
@@ -156,4 +157,3 @@ z 2 różnych rezerwacji / zakupów.
 1. Utworzenie Storybook dla zdefiniowanych komponentów.
 
 Wszelkie inne dodane przez Was funkcjonalności czy usprawnienia infrastrukturalne należy przedstawić w README.md projektu :)
-Template znajdziecie w pierwszym projekcie.
